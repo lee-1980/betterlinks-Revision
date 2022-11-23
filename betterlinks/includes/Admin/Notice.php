@@ -106,6 +106,7 @@ public function usage_tracker()
             [
                 'start'       => $notices->strtotime( '+20 day' ),
                 'recurrence'  => 30,
+                'refresh'     => BETTERLINKS_VERSION,
                 'dismissible' => true,
             ]
         );
@@ -115,7 +116,8 @@ public function usage_tracker()
             [ $this->opt_in_tracker, 'notice' ],
             [
                 'classes'     => 'updated put-dismiss-notice',
-                'start'       => $notices->strtotime( '+10 day' ),
+                'start'       => $notices->strtotime( '+25 day' ),
+                'refresh'     => BETTERLINKS_VERSION,
                 'dismissible' => true,
                 'do_action'   => 'wpdeveloper_notice_clicked_for_betterlinks',
                 'display_if'  => ! is_array( $notices->is_installed( 'betterlinks-pro/betterlinks-pro.php' ) )
@@ -140,11 +142,37 @@ public function usage_tracker()
             $lifetime_notice,
             [
                 'classes'     => 'updated put-dismiss-notice',
-                'start'       => $notices->time(),
-				'recurrence'  => 7,
+                'start'       => $notices->strtotime( '+35 day' ),
+                'refresh'     => BETTERLINKS_VERSION,
+                'recurrence'  => 7,
                 'expire'      => strtotime('11:59:59pm 20th October, 2022'),
                 'dismissible' => true,
-				'display_if'  => ! is_array( $notices->is_installed( 'betterlinks-pro/betterlinks-pro.php' ) )
+                'display_if'  => ! is_array( $notices->is_installed( 'betterlinks-pro/betterlinks-pro.php' ) )
+            ]
+        );
+
+		$_black_friday_notice_message = sprintf(
+			'<p style="margin: 0"><strong>%s</strong>: %s <a class="button button-small" href="%s" target="_blank">%s</a></p>',
+			__('Black Friday Exclusive', 'templately'),
+			__( '🎉 SAVE up to 40% & access to BetterLinks features.', 'betterlinks' ),
+			esc_url('https://betterlinks.io/#pricing'),
+			__( 'Grab The Deal', 'betterlinks' )
+		);
+
+		$_black_friday_notice = [
+            'thumbnail' => self::ASSET_URL . 'images/logo-large.svg',
+            'html' => $_black_friday_notice_message,
+        ];
+
+        $notices->add(
+            'black_friday_notice',
+            $_black_friday_notice,
+            [
+                'start'       => $notices->time(),
+                'recurrence'  => false,
+                'dismissible' => true,
+                "expire"      => 1669852799,
+                'display_if'  => ! is_array( $notices->is_installed( 'betterlinks-pro/betterlinks-pro.php' ) )
             ]
         );
 

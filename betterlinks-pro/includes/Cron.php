@@ -9,12 +9,11 @@ class Cron
         add_filter('cron_schedules', array($self, 'cron_time_intervals'));
         add_action('betterlinkspro/expire_link_status_handler', array($self, 'expire_link_status_handler'));
         add_action('betterlinkspro/send_google_analytics_data', array($self, 'send_google_analytics_data'), 10, 3);
-        add_filter('betterlinks/before_write_json_links', array($self, 'append_google_analytic_data'));
+        add_action('betterlinkspro/send_pixel_analytics_data', array($self, 'send_pixel_analytics_data'), 10, 4);
         add_action('betterlinkspro/broken_link_checker', array($self, 'broken_link_checker'));
         add_action('betterlinks/scheduled_link_publish', [$self, 'scheduled_link_publish'], 10, 1);
         $self->dispatch_brokenlink_checker();
     }
-    
 
     public function cron_time_intervals($schedules)
     {
@@ -90,19 +89,15 @@ class Cron
             $analytic->ga_send_pageview(get_site_url(), $page_url, $data['link_slug'], $ga_tracking_code);
         }
     }
-
+    public function send_pixel_analytics_data($data,  $server, $pixel_id, $access_token)
+    {
+        $pixelAnalytic = new \BetterLinksPro\Analytics\PixelAnalytics();
+        $pixelAnalytic->pixel_send_pageview($data,  $server, $pixel_id, $access_token);
+    }
     public function change_links_status_by_id($ID, $status)
     {
         $retults = \BetterLinks\Helper::insert_link(['ID' => $ID, 'link_status' => $status], true);
         return $retults;
-    }
-    public function append_google_analytic_data($data)
-    {
-        $ga = json_decode(get_option(BETTERLINKS_PRO_GA_OPTION_NAME, '{}'), true) ;
-        if (is_array($ga) && is_array($data)) {
-            return array_merge($ga, $data);
-        }
-        return $data;
     }
     public function broken_link_checker()
     {

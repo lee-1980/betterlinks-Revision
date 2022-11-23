@@ -38,19 +38,44 @@ class Link
             // wp_clear_scheduled_hook('betterlinkspro/expire_link_status_handler');
             wp_schedule_single_event(time(), 'betterlinkspro/expire_link_status_handler', array($data));
         }
-        $this->start_google_analytic_cron_job($data);
+        $this->start_external_analytics_cron_job($data);
     }
 
-    public function start_google_analytic_cron_job($data)
+    public function start_external_analytics_cron_job($data)
     {
-        global $betterlinks;
-        if (BETTERLINKS_EXISTS_LINKS_JSON && isset($betterlinks['is_enable_ga']) && $betterlinks['is_enable_ga'] == true && !empty($betterlinks['ga_tracking_code'])) {
-            wp_schedule_single_event(time(), 'betterlinkspro/send_google_analytics_data', array($data, $_SERVER['REQUEST_URI'], $betterlinks['ga_tracking_code']));
-        } else {
-            $ga = json_decode(get_option(BETTERLINKS_PRO_GA_OPTION_NAME, '{}'), true);
-            if (count($ga) > 0) {
-                wp_schedule_single_event(time(), 'betterlinkspro/send_google_analytics_data', array($data, $_SERVER['REQUEST_URI'], $ga['ga_tracking_code']));
+        $ga_tracking_code = false;
+        $pixel_id = false;
+        $pixel_access_token = false;
+
+        if(BETTERLINKS_EXISTS_LINKS_JSON){
+            global $betterlinks;
+            if(!empty($betterlinks['is_enable_ga']) && !empty($betterlinks['ga_tracking_code'])){
+                $ga_tracking_code = $betterlinks['ga_tracking_code'];
             }
+            if(!empty($betterlinks['is_enable_pixel']) && !empty($betterlinks['pixel_id']) && !empty($betterlinks['pixel_access_token'])){
+                $pixel_id = $betterlinks['pixel_id'];
+                $pixel_access_token = $betterlinks['pixel_access_token'];
+            }
+        }else{
+            $analytic_options = get_option(BETTERLINKS_PRO_EXTERNAL_ANALYTICS_OPTION_NAME, []);
+            if(is_string($analytic_options)){
+                $analytic_options = json_decode($analytic_options, true);
+            }
+            if (!empty($analytic_options['is_enable_ga']) && !empty($analytic_options['ga_tracking_code'])) {
+                $ga_tracking_code = $analytic_options['ga_tracking_code'];
+            }
+            if (!empty($analytic_options['is_enable_pixel']) && !empty($analytic_options['pixel_id']) && !empty($analytic_options['pixel_access_token'])) {
+                $pixel_id = $analytic_options['pixel_id'];
+                $pixel_access_token = $analytic_options['pixel_access_token'];
+            }
+        }
+
+        if($ga_tracking_code){
+            wp_schedule_single_event(time(), 'betterlinkspro/send_google_analytics_data', array($data, $_SERVER['REQUEST_URI'], $ga_tracking_code));
+        }
+        
+        if($pixel_id && $pixel_access_token){
+            wp_schedule_single_event(time(), 'betterlinkspro/send_pixel_analytics_data', array($data, $_SERVER, $pixel_id, $pixel_access_token));
         }
     }
     

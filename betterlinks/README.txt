@@ -5,7 +5,7 @@ Tags: affiliate links, link branding,Link Shortner, link tracking, redirects, li
 Requires at least: 5.0
 Tested up to: 6.1
 Requires PHP: 5.6
-Stable tag: 1.5.1
+Stable tag: 1.5.3
 License: GPLv3 or later
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 
@@ -136,6 +136,15 @@ BetterLinks is very useful for website owners, affiliate marketers, SEO experts 
 
 == Changelog ==
 
+= 1.5.3 - 23/11/2022 =
+
+- Few minor bug fixes & improvements
+
+= 1.5.2 - 20/11/2022 =
+
+- Fixed: Instant Gutenberg Redirect | Options not working properly
+- Few minor bug fixes & improvements
+
 = 1.5.1 - 06/11/2022 =
 
 - Revamped: Improved background process during migration from third party plugins for better performance
@@ -155,7 +164,7 @@ BetterLinks is very useful for website owners, affiliate marketers, SEO experts 
 = 1.4.0 - 06/07/2022 =
 
 - Added: Option to "Add Links as Favorites"
-- Fixed: Shortened URLs being case sensitive 
+- Fixed: Shortened URLs being case sensitive
 - Few minor bug fixes & improvements
 
 = 1.3.4 - 19/06/2022 =

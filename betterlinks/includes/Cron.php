@@ -28,7 +28,6 @@ class Cron
     public function write_json_links()
     {
         $formattedArray = \BetterLinks\Helper::get_links_for_json();
-        $formattedArray = apply_filters('betterlinks/before_write_json_links', $formattedArray);
         return file_put_contents(BETTERLINKS_UPLOAD_DIR_PATH . '/links.json', json_encode($formattedArray));
     }
 

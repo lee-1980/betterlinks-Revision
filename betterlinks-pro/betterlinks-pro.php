@@ -3,7 +3,7 @@
  * Plugin Name:		BetterLinks Pro
  * Plugin URI:		https://betterlinks.io/
  * Description:		Get access to Individual Analytics, Role Management, Google Analytics Integration & many more amazing features to track & run successful marketing campaigns.
- * Version:			1.3.0
+ * Version:			1.4.0
  * Author:			WPDeveloper
  * Author URI:		https://wpdeveloper.com
  * License:			GPL-3.0+
@@ -48,7 +48,7 @@ if (!class_exists('BetterLinksPro')) {
             /**
              * Defines CONSTANTS for Whole plugins.
              */
-            define('BETTERLINKS_PRO_VERSION', '1.3.0');
+            define('BETTERLINKS_PRO_VERSION', '1.4.0');
             define('BETTERLINKS_PRO_PLUGIN_SLUG', 'betterlinks-pro');
             define('BETTERLINKS_PRO_PLUGIN_BASENAME', plugin_basename(__FILE__));
             define('BETTERLINKS_PRO_PLUGIN_ROOT_URI', plugins_url('/', __FILE__));
@@ -58,7 +58,7 @@ if (!class_exists('BetterLinksPro')) {
             define('BETTERLINKS_STORE_URL', 'https://api.wpdeveloper.com/');
             define('BETTERLINKS_SL_ITEM_ID', 764539);
             define('BETTERLINKS_SL_ITEM_NAME', 'BetterLinks Pro');
-            define('BETTERLINKS_PRO_GA_OPTION_NAME', 'betterlinkspro_ga');
+            define('BETTERLINKS_PRO_EXTERNAL_ANALYTICS_OPTION_NAME', 'betterlinkspro_ga');
             define('BETTERLINKS_PRO_UTM_OPTION_NAME', 'betterlinkspro_utm_templates');
             define('BETTERLINKS_PRO_BROKEN_LINK_OPTION_NAME', 'betterlinkspro_broken_link');
             define('BETTERLINKS_PRO_REPORTING_OPTION_NAME', 'betterlinkspro_reporting');

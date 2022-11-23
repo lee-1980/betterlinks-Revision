@@ -85,7 +85,7 @@ class Assets
         wp_enqueue_script(
             'betterlinks-gutenberg',
             BETTERLINKS_ASSETS_URI . 'js/betterlinks-gutenberg.core.min.js',
-            ['wp-plugins', 'wp-edit-post'],
+            ['wp-edit-post', 'wp-plugins', 'wp-core-data', 'wp-data', 'wp-block-editor', 'wp-editor', 'wp-components', 'wp-blocks', 'wp-keycodes', 'wp-dom', 'wp-i18n', 'wp-hooks', 'react', 'react-dom'],
             filemtime(BETTERLINKS_ASSETS_DIR_PATH . 'js/betterlinks-gutenberg.core.min.js')
         );
         wp_localize_script('betterlinks-gutenberg', 'betterLinksGlobal', [

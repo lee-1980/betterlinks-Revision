@@ -2,6 +2,9 @@
 .wpnotice-thumbnail-wrapper img {
     display: block;
 }
+#wpnotice-betterlinks-black_friday_notice {
+    grid-template-columns: 40px 1fr !important;
+}
 
 .button.button-primary.btn-nx-cta {
     background-color: #6A4BFF;

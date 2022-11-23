@@ -10,11 +10,11 @@ class Migration {
             }
 			update_option('betterlinks_pro_version', BETTERLINKS_PRO_VERSION);
         }
-        if(!get_option(BETTERLINKS_PRO_GA_OPTION_NAME)){
-			add_option(BETTERLINKS_PRO_GA_OPTION_NAME, json_encode(array(
+        if(!get_option(BETTERLINKS_PRO_EXTERNAL_ANALYTICS_OPTION_NAME)){
+			add_option(BETTERLINKS_PRO_EXTERNAL_ANALYTICS_OPTION_NAME, array(
 				'is_enable_ga' => false,
 				'ga_tracking_code' => '',
-			)));
+			));
 		}
     }
 }

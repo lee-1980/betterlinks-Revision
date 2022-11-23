@@ -1,6 +1,8 @@
 <?php
 namespace BetterLinksPro\Admin;
 
+use DynamicOOOS\PayPalHttp\Serializer\Json;
+
 class Ajax
 {
     use \BetterLinksPro\Traits\BrokenLinks;
@@ -10,8 +12,8 @@ class Ajax
         $self = new self();
         add_action('wp_ajax_betterlinkspro/admin/get_role_management', [$self, 'get_role_management']);
         add_action('wp_ajax_betterlinkspro/admin/role_management', [$self, 'role_management']);
-        add_action('wp_ajax_betterlinkspro/admin/get_google_analytics', [$self, 'get_google_analytics']);
-        add_action('wp_ajax_betterlinkspro/admin/google_analytics', [$self, 'google_analytics']);
+        add_action('wp_ajax_betterlinkspro/admin/get_external_analytics', [$self, 'get_external_analytics']);
+        add_action('wp_ajax_betterlinkspro/admin/external_analytics', [$self, 'external_analytics']);
         add_action('wp_ajax_betterlinkspro/admin/get_links', [$self, 'get_links']);
         add_action('wp_ajax_betterlinkspro/admin/get_broken_links_data', [$self, 'get_broken_links_data']);
         add_action('wp_ajax_betterlinkspro/admin/run_instant_broken_link_checker', [$self, 'run_instant_broken_link_checker']);
@@ -72,29 +74,42 @@ class Ajax
         wp_die();
     }
 
-    public function get_google_analytics()
+    public function get_external_analytics()
     {
         check_ajax_referer('betterlinkspro_admin_nonce', 'security');
         if (apply_filters('betterlinkspro/admin/current_user_can_edit_settings', current_user_can('manage_options'))) {
-            $data = get_option(BETTERLINKS_PRO_GA_OPTION_NAME, '{}');
-            wp_send_json_success(json_decode($data, true));
+            $data = get_option(BETTERLINKS_PRO_EXTERNAL_ANALYTICS_OPTION_NAME, []);
+            if(is_string($data)){
+                $data = json_decode($data, true);
+            }
+            wp_send_json_success($data);
             wp_die();
         }
         wp_die();
     }
 
-    public function google_analytics()
+    public function external_analytics()
     {
         check_ajax_referer('betterlinkspro_admin_nonce', 'security');
         if (apply_filters('betterlinkspro/admin/current_user_can_edit_settings', current_user_can('manage_options'))) {
-            $is_enable_ga = (boolean) (isset($_POST['is_enable_ga']) ? sanitize_text_field($_POST['is_enable_ga']) : false);
+            $is_enable_ga = filter_var((isset($_POST['is_enable_ga']) ? sanitize_text_field($_POST['is_enable_ga']) : false), FILTER_VALIDATE_BOOLEAN);
+            $is_enable_pixel = filter_var((isset($_POST['is_enable_pixel']) ? sanitize_text_field($_POST['is_enable_pixel']) : false), FILTER_VALIDATE_BOOLEAN);
             $ga_tracking_code = (isset($_POST['ga_tracking_code']) ? sanitize_text_field($_POST['ga_tracking_code']) : '');
-            $update = update_option(BETTERLINKS_PRO_GA_OPTION_NAME, json_encode(array(
+            $pixel_id = (isset($_POST['pixel_id']) ? sanitize_text_field($_POST['pixel_id']) : '');
+            $pixel_access_token = (isset($_POST['pixel_access_token']) ? sanitize_text_field($_POST['pixel_access_token']) : '');
+            $analytic_data = array(
                 'is_enable_ga' => $is_enable_ga,
                 'ga_tracking_code' => $ga_tracking_code,
-            )));
+                'is_enable_pixel' => $is_enable_pixel,
+                'pixel_id' => $pixel_id,
+                'pixel_access_token' => $pixel_access_token,
+            );
+            $update = update_option(BETTERLINKS_PRO_EXTERNAL_ANALYTICS_OPTION_NAME, $analytic_data);
+            if(defined('BETTERLINKS_EXISTS_LINKS_JSON') && BETTERLINKS_EXISTS_LINKS_JSON){
+                $formattedArray = \BetterLinks\Helper::get_links_for_json();
+                file_put_contents(BETTERLINKS_UPLOAD_DIR_PATH . '/links.json', json_encode($formattedArray));
+            }
             wp_send_json_success($update);
-            wp_die();
         }
         wp_die();
     }
