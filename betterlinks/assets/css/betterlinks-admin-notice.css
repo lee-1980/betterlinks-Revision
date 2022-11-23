@@ -1,0 +1,351 @@
+/* review notice */
+.wpnotice-thumbnail-wrapper img {
+    display: block;
+}
+
+.button.button-primary.btn-nx-cta {
+    background-color: #6A4BFF;
+}
+.button.button-primary.btn-nx-cta:hover {
+    background-color: #5414d0;
+}
+
+.btn-nx-cta:focus {
+    outline: none;
+    box-shadow: none;
+}
+
+.wpnotice-content-wrapper > p {
+    margin-top: 0px;
+}
+
+.notice-betterlinks-opt_in {
+    display: block !important;
+}
+
+.notice-betterlinks-review {
+    padding: 10px;
+    background-color: #fff;
+    border-radius: 3px;
+    margin: 15px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.notice-betterlinks-review:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.wpdeveloper-notice-thumbnail {
+    width: 90px;
+    float: left;
+    padding: 5px;
+    text-align: center;
+    border-right: 4px solid transparent;
+}
+.wpdeveloper-notice-thumbnail img {
+    width: 72px;
+    opacity: 0.85;
+    -webkit-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+}
+.wpdeveloper-notice-thumbnail img:hover {
+    opacity: 1;
+}
+.wpdeveloper-notice-thumbnail img,
+.wpdeveloper-update-notice .wpdeveloper-notice-thumbnail img,
+.wpdeveloper-update_400k-notice .wpdeveloper-notice-thumbnail img {
+    width: 32px;
+}
+.wpdeveloper-notice-thumbnail,
+.wpdeveloper-update-notice .wpdeveloper-notice-thumbnail,
+.wpdeveloper-update_400k-notice .wpdeveloper-notice-thumbnail {
+    width: auto;
+    padding: 7px;
+}
+.wpdeveloper-update-notice .wpdeveloper-notice-message,
+.wpdeveloper-update_400k-notice .wpdeveloper-notice-message {
+    padding: 5px 0;
+}
+.wpdeveloper-update-notice,
+.wpdeveloper-update_400k-notice {
+    border-color: #6648fe;
+    padding: 0
+}
+a.ea-notice-cta {
+    background-color: #4d18ff;
+    background: linear-gradient(-30deg, #4d18ff, #9a7cff);
+    margin-top: 30px;
+    color: #fff;
+    padding: 8px 20px;
+    outline: none;
+    text-decoration: none;
+    border-radius: 3px;
+    margin-left: 10px;
+    transition: all 0.3s ease;
+}
+a.ea-notice-cta:hover {
+    opacity: 0.85;
+}
+span.coupon-code {
+    background: #ebebeb;
+    padding: 5px 10px;
+    letter-spacing: 0.035em;
+}
+.eael-review-text {
+    overflow: hidden;
+}
+.eael-review-text h3 {
+    font-size: 24px;
+    margin: 0 0 5px;
+    font-weight: 400;
+    line-height: 1.3;
+}
+.eael-review-text p {
+    font-size: 13px;
+    margin: 0 0 5px;
+}
+.betterlinks-notice-links {
+    margin: 8px 0 0 0;
+    padding: 0;
+}
+.betterlinks-notice-links li {
+    display: inline-flex;
+    margin-right: 15px;
+    align-items: center;
+}
+.betterlinks-notice-links li a {
+    display: inline-block;
+    color: #10738b;
+    text-decoration: none;
+    position: relative;
+}
+
+.wpdeveloper-notice-message {
+    padding: 10px 0;
+}
+.wpdeveloper-upsale-notice .wpdeveloper-notice-message {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    padding: 10px 0;
+}
+.wpdeveloper-upsale-notice .wpdeveloper-notice-message + .notice-dismiss {
+    top: 10px;
+}
+.wpdeveloper-upsale-notice #plugin-install-core {
+    margin-left: 10px;
+}
+.notice.notice-has-thumbnail {
+    padding-left: 0;
+}
+.wpdeveloper-upsale-notice {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+.wpdeveloper-upsale-notice .wpdeveloper-notice-thumbnail {
+    padding: 10px;
+    width: 40px;
+}
+.wpdeveloper-upsale-notice .wpdeveloper-notice-thumbnail img {
+    width: 32px;
+}
+.toplevel_page_eael-settings .wp-menu-image img {
+    max-width: 20px;
+    padding-top: 8px !important;
+}
+.wpdeveloper-upsale-notice .wpdeveloper-notice-message .button {
+    margin-left: 15px;
+}
+
+.notice-has-thumbnail.wpdeveloper-freedom30-notice {
+    display: grid;
+    grid-template-columns: 70px 1fr;
+    align-items: center;
+    position: relative;
+    /* background-image: linear-gradient(180deg, #8C94FF 0%, #2564FF 100%);
+    color: #fff;
+    border-left: 0px; */
+}
+.notice-has-thumbnail.wpdeveloper-freedom30-notice .wpdeveloper-notice-thumbnail {
+    width: 70px;
+}
+.notice-has-thumbnail.wpdeveloper-freedom30-notice .wpdeveloper-notice-thumbnail img {
+    width: 50px;
+}
+
+/* review notice old -css */
+.betterlinks-notice {
+	background-color: #f7f6d4;
+	padding: 10px 15px;
+	border-radius: 5px;
+	box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.15);
+	max-width: 90%;
+	color: #9a7223;
+}
+
+.betterlinks-notice h5 {
+	font-size: 1.2em;
+	font-weight: bold;
+}
+
+.betterlinks-error-notice {
+	background-color: #fff5f5;
+	color: #e8606d;
+	padding: 30px;
+	border-radius: 3px;
+	border: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.betterlinks-error-notice h3 {
+	color: #e24c4b;
+	margin: 15px 0;
+}
+
+.betterlinks-success-notice h3 {
+	color: #6c62ff;
+	margin: 15px 0;
+}
+
+.betterlinks-success-notice {
+	background-color: #f5f5f5;
+	color: #26a9b4;
+	padding: 20px;
+	border-radius: 3px;
+	border: 1px solid rgba(0, 0, 0, 0.05);
+	display: block;
+}
+
+.wpdeveloper-review-notice {
+	padding: 10px;
+	background-color: #fff;
+	border-radius: 3px;
+	margin: 15px;
+	border-left: 4px solid #00a0d2;
+	display: flex;
+	align-items: center;
+}
+
+.wpdeveloper-review-notice:after {
+	content: '';
+	display: table;
+	clear: both;
+}
+
+.wpdeveloper-notice-thumbnail {
+	width: 90px;
+	float: left;
+	padding: 5px;
+	text-align: center;
+	border-right: 4px solid transparent;
+}
+
+.wpdeveloper-notice-thumbnail img {
+	width: 72px;
+	opacity: 0.85;
+	transition: all 0.3s;
+}
+
+.wpdeveloper-notice-thumbnail img:hover {
+	opacity: 1;
+}
+
+.betterlinks-review-text {
+	overflow: hidden;
+}
+
+.betterlinks-review-text h3 {
+	font-size: 24px;
+	margin: 0 0 5px;
+	font-weight: 400;
+	line-height: 1.3;
+}
+
+.betterlinks-review-text p {
+	font-size: 13px;
+	margin: 0 0 5px;
+}
+
+.wpdeveloper-notice-link {
+	margin: 8px 0 0 0;
+	padding: 0;
+}
+
+.wpdeveloper-notice-link li {
+	display: inline-block;
+	margin-right: 15px;
+}
+
+.wpdeveloper-notice-link li a {
+	display: inline-block;
+	color: #10738b;
+	text-decoration: none;
+	padding-left: 26px;
+	position: relative;
+}
+
+.wpdeveloper-notice-link li a span {
+	position: absolute;
+	left: 0;
+	top: -2px;
+}
+
+.wpdeveloper-notice-message {
+	padding: 10px 0;
+}
+.wpdeveloper-upsale-notice .wpdeveloper-notice-message {
+	display: flex;
+	align-items: center;
+	padding: 10px 0;
+}
+.wpdeveloper-upsale-notice .wpdeveloper-notice-message + .notice-dismiss {
+	top: 18px;
+}
+.wpdeveloper-upsale-notice #plugin-install-core {
+	margin-left: 10px;
+}
+.notice.notice-has-thumbnail {
+	padding-left: 0px;
+}
+
+.wpdeveloper-upsale-notice {
+	display: flex;
+}
+.betterlinks-upsale-notice .wpdeveloper-notice-thumbnail {
+	padding: 0;
+	width: 80px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.betterlinks-upsale-notice .wpdeveloper-notice-thumbnail img {
+	width: 50px;
+	padding: 8px;
+}
+a.betterlinks-notice-cta {
+	margin-left: 10px !important;
+}
+
+.betterlinks-dashboard-body .notice.betterlinks-usage-notice {
+	display: flex;
+	align-content: center;
+	align-items: center;
+}
+.betterlinks-usage-notice-img .betterlinks-logo-inline {
+	width: 60px;
+	display: block;
+	box-shadow: 1px 0 0 0 rgba(0, 0, 0, 0.1);
+	margin-right: 10px;
+	padding: 15px 5px 5px 0;
+}

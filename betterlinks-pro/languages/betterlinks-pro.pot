@@ -1,0 +1,920 @@
+# Copyright (C) 2021 WPDeveloper
+# This file is distributed under the GPL-3.0+.
+msgid ""
+msgstr ""
+"Project-Id-Version: BetterLinks Pro 1.1.2\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/betterlinks-pro\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"POT-Creation-Date: 2021-10-25T05:25:35+00:00\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"X-Generator: WP-CLI 2.5.0\n"
+"X-Domain: betterlinks-pro\n"
+
+#. Plugin Name of the plugin
+#: includes/Admin/Notices.php:18
+#: assets/js/betterlinkspro.core.min.js:1
+msgid "BetterLinks Pro"
+msgstr ""
+
+#. Plugin URI of the plugin
+msgid "https://betterlinks.io/"
+msgstr ""
+
+#. Description of the plugin
+msgid "Get access to Individual Analytics, Role Management, Google Analytics Integration & many more amazing features to track & run successful marketing campaigns."
+msgstr ""
+
+#. Author of the plugin
+msgid "WPDeveloper"
+msgstr ""
+
+#. Author URI of the plugin
+msgid "https://wpdeveloper.com"
+msgstr ""
+
+#: includes/Admin/Ajax.php:170
+msgid "Oops… Your Link is Broken. "
+msgstr ""
+
+#: includes/Admin/Ajax.php:172
+msgid "Your Link is Active"
+msgstr ""
+
+#: includes/Admin/Notices.php:18
+msgid "requires"
+msgstr ""
+
+#: includes/Admin/Notices.php:18
+#: includes/Admin/views/email-report-template.php:7
+msgid "BetterLinks"
+msgstr ""
+
+#: includes/Admin/Notices.php:18
+msgid "core plugin to be installed. Please get the plugin now!"
+msgstr ""
+
+#: includes/Admin/Notices.php:65
+msgid "Plugin couldn't be activated."
+msgstr ""
+
+#: includes/Admin/Notices.php:67
+msgid "BetterLinks is activated!"
+msgstr ""
+
+#: includes/Admin/Notices.php:75
+msgid "Plugin is installed successfully!"
+msgstr ""
+
+#: includes/Admin/views/email-report-template.php:19
+msgid "Your Broken Link Checker Report"
+msgstr ""
+
+#: includes/Admin/views/email-report-template.php:37
+#: assets/js/betterlinkspro.core.min.js:1
+msgid "Total Links"
+msgstr ""
+
+#: includes/Admin/views/email-report-template.php:38
+#: assets/js/betterlinkspro.core.min.js:1
+msgid "Links Scanned"
+msgstr ""
+
+#: includes/Admin/views/email-report-template.php:39
+msgid "Broken Links Found"
+msgstr ""
+
+#: includes/Admin/views/email-report-template.php:53
+msgid "View Broken Link Checker"
+msgstr ""
+
+#: includes/Traits/BrokenLinks.php:46
+msgid "Summarized Report Of Broken Links On Your Site."
+msgstr ""
+
+#: assets/js/betterlinkspro.core.min.js:1
+msgid "Daily"
+msgstr ""
+
+#: assets/js/betterlinkspro.core.min.js:1
+msgid "Weekly"
+msgstr ""
+
+#: assets/js/betterlinkspro.core.min.js:1
+msgid "Monthly"
+msgstr ""
+
+#: assets/js/betterlinkspro.core.min.js:1
+msgid "Yearly"
+msgstr ""
+
+#: assets/js/betterlinkspro.core.min.js:1
+msgid "All Clicks"
+msgstr ""
+
+#: assets/js/betterlinkspro.core.min.js:1
+msgid "Unique Clicks"
+msgstr ""
+
+#: assets/js/betterlinkspro.core.min.js:1
+msgid "Conversions"
+msgstr ""
+
+#: assets/js/betterlinkspro.core.min.js:1
+msgid "URL"
+msgstr ""
+
+#: assets/js/betterlinkspro.core.min.js:1
+msgid "Clicks"
+msgstr ""
+
+#: assets/js/betterlinkspro.core.min.js:1
+msgid "Uniques"
+msgstr ""
+
+#: assets/js/betterlinkspro.core.min.js:1
+msgid "Conv Rate"
+msgstr ""
+
+#: assets/js/betterlinkspro.core.min.js:1
+msgid "Save Settings"
+msgstr ""
+
+#: assets/js/betterlinkspro.core.min.js:1
+msgid "Saving..."
+msgstr ""
+
+#: assets/js/betterlinkspro.core.min.js:1
+msgid "Saved!"
+msgstr ""
+
+#: assets/js/betterlinkspro.core.min.js:1
+msgid "Who Can View Links?"
+msgstr ""
+
+#: assets/js/betterlinkspro.core.min.js:1
+msgid "Who Can Create Links?"
+msgstr ""
+
+#: assets/js/betterlinkspro.core.min.js:1
+msgid "Who Can Edit Links?"
+msgstr ""
+
+#: assets/js/betterlinkspro.core.min.js:1
+msgid "Who Can Check Analytics?"
+msgstr ""
+
+#: assets/js/betterlinkspro.core.min.js:1
+msgid "Who Can Edit Settings?"
+msgstr ""
+
+#: assets/js/betterlinkspro.core.min.js:1
+msgid "Enable Google Analytics"
+msgstr ""
+
+#: assets/js/betterlinkspro.core.min.js:1
+msgid "Google Analytics Tracking ID"
+msgstr ""
+
+#: assets/js/betterlinkspro.core.min.js:1
+msgid "Scheduled Scan"
+msgstr ""
+
+#: assets/js/betterlinkspro.core.min.js:1
+msgid "Enable"
+msgstr ""
+
+#: assets/js/betterlinkspro.core.min.js:1
+msgid "\"Scheduled Scan\""
+msgstr ""
+
+#: assets/js/betterlinkspro.core.min.js:1
+msgid "to automatically scan broken links on your website."
+msgstr ""
+
+#: assets/js/betterlinkspro.core.min.js:1
+msgid "Saving.."
+msgstr ""
+
+#: assets/js/betterlinkspro.core.min.js:1
+msgid "Enable Scheduled Scan"
+msgstr ""
+
+#: assets/js/betterlinkspro.core.min.js:1
+msgid "Frequency"
+msgstr ""
+
+#: assets/js/betterlinkspro.core.min.js:1
+msgid "Day"
+msgstr ""
+
+#: assets/js/betterlinkspro.core.min.js:1
+msgid "Time"
+msgstr ""
+
+#: assets/js/betterlinkspro.core.min.js:1
+msgid "Test Report"
+msgstr ""
+
+#: assets/js/betterlinkspro.core.min.js:1
+msgid "Enable Reporting"
+msgstr ""
+
+#: assets/js/betterlinkspro.core.min.js:1
+msgid "Reporting Email"
+msgstr ""
+
+#: assets/js/betterlinkspro.core.min.js:1
+msgid "Reporting Email Subject"
+msgstr ""
+
+#: assets/js/betterlinkspro.core.min.js:1
+msgid "Reporting Test"
+msgstr ""
+
+#: assets/js/betterlinkspro.core.min.js:1
+msgid "Email Sending.."
+msgstr ""
+
+#: assets/js/betterlinkspro.core.min.js:1
+msgid "Email Sending..."
+msgstr ""
+
+#: assets/js/betterlinkspro.core.min.js:1
+msgid "Email Sent"
+msgstr ""
+
+#: assets/js/betterlinkspro.core.min.js:1
+msgid "Failed Delivery"
+msgstr ""
+
+#: assets/js/betterlinkspro.core.min.js:1
+msgid "Bulk Actions"
+msgstr ""
+
+#: assets/js/betterlinkspro.core.min.js:1
+msgid "Delete"
+msgstr ""
+
+#: assets/js/betterlinkspro.core.min.js:1
+msgid "Are you sure you want to delete selected logs permanently?"
+msgstr ""
+
+#: assets/js/betterlinkspro.core.min.js:1
+msgid "Apply"
+msgstr ""
+
+#: assets/js/betterlinkspro.core.min.js:1
+msgid "Resume Scan"
+msgstr ""
+
+#: assets/js/betterlinkspro.core.min.js:1
+msgid "Please Wait..."
+msgstr ""
+
+#: assets/js/betterlinkspro.core.min.js:1
+msgid "Start Scanning"
+msgstr ""
+
+#: assets/js/betterlinkspro.core.min.js:1
+msgid "Link"
+msgstr ""
+
+#: assets/js/betterlinkspro.core.min.js:1
+msgid "Short URL"
+msgstr ""
+
+#: assets/js/betterlinkspro.core.min.js:1
+msgid "Copy Link"
+msgstr ""
+
+#: assets/js/betterlinkspro.core.min.js:1
+msgid "Target URL"
+msgstr ""
+
+#: assets/js/betterlinkspro.core.min.js:1
+msgid "Update"
+msgstr ""
+
+#: assets/js/betterlinkspro.core.min.js:1
+msgid "Action"
+msgstr ""
+
+#: assets/js/betterlinkspro.core.min.js:1
+msgid "Are you sure you want to delete log permanently?"
+msgstr ""
+
+#: assets/js/betterlinkspro.core.min.js:1
+msgid "Remove Log"
+msgstr ""
+
+#: assets/js/betterlinkspro.core.min.js:1
+msgid "Instant Scan"
+msgstr ""
+
+#: assets/js/betterlinkspro.core.min.js:1
+msgid "Start New Scan"
+msgstr ""
+
+#: assets/js/betterlinkspro.core.min.js:1
+msgid "Scan is Complete."
+msgstr ""
+
+#: assets/js/betterlinkspro.core.min.js:1
+msgid " Broken Links Found"
+msgstr ""
+
+#: assets/js/betterlinkspro.core.min.js:1
+msgid "Broken Link Reports"
+msgstr ""
+
+#: assets/js/betterlinkspro.core.min.js:1
+msgid "Auto Update"
+msgstr ""
+
+#: assets/js/betterlinkspro.core.min.js:1
+msgid "Update the plugin right from your WordPress Dashboard."
+msgstr ""
+
+#: assets/js/betterlinkspro.core.min.js:1
+msgid "Premium Support"
+msgstr ""
+
+#: assets/js/betterlinkspro.core.min.js:1
+msgid "Supported by professional and courteous staff."
+msgstr ""
+
+#: assets/js/betterlinkspro.core.min.js:1
+msgid "Just one more step to go!"
+msgstr ""
+
+#: assets/js/betterlinkspro.core.min.js:1
+msgid "Enter your license key here, to activate"
+msgstr ""
+
+#: assets/js/betterlinkspro.core.min.js:1
+msgid ", and get automatic updates and premium support."
+msgstr ""
+
+#: assets/js/betterlinkspro.core.min.js:1
+msgid "Visit the "
+msgstr ""
+
+#: assets/js/betterlinkspro.core.min.js:1
+msgid "Validation Guide"
+msgstr ""
+
+#: assets/js/betterlinkspro.core.min.js:1
+msgid " for help."
+msgstr ""
+
+#: assets/js/betterlinkspro.core.min.js:1
+msgid "Log in to "
+msgstr ""
+
+#: assets/js/betterlinkspro.core.min.js:1
+msgid "your account"
+msgstr ""
+
+#: assets/js/betterlinkspro.core.min.js:1
+msgid " to get your license key."
+msgstr ""
+
+#: assets/js/betterlinkspro.core.min.js:1
+msgid "If you don't yet have a license key, get "
+msgstr ""
+
+#: assets/js/betterlinkspro.core.min.js:1
+msgid "BetterLinks Pro now"
+msgstr ""
+
+#: assets/js/betterlinkspro.core.min.js:1
+msgid "Copy the license key from your account and paste it below."
+msgstr ""
+
+#: assets/js/betterlinkspro.core.min.js:1
+msgid "Click on "
+msgstr ""
+
+#: assets/js/betterlinkspro.core.min.js:1
+msgid "\"Activate License\""
+msgstr ""
+
+#: assets/js/betterlinkspro.core.min.js:1
+msgid "button."
+msgstr ""
+
+#: assets/js/betterlinkspro.core.min.js:1
+msgid "Place Your License Key and Activate"
+msgstr ""
+
+#: assets/js/betterlinkspro.core.min.js:1
+msgid "Deactivating..."
+msgstr ""
+
+#: assets/js/betterlinkspro.core.min.js:1
+msgid "Deactivate License"
+msgstr ""
+
+#: assets/js/betterlinkspro.core.min.js:1
+msgid "Activating..."
+msgstr ""
+
+#: assets/js/betterlinkspro.core.min.js:1
+msgid "Activate License"
+msgstr ""
+
+#: assets/js/betterlinkspro.core.min.js:1
+msgid "Force HTTPS"
+msgstr ""
+
+#: assets/js/betterlinkspro.core.min.js:1
+msgid "Enable HTTPS Redirection"
+msgstr ""
+
+#: assets/js/betterlinkspro.core.min.js:1
+msgid "This will allow you to redirect your Target URLs in HTTPS."
+msgstr ""
+
+#: assets/js/betterlinkspro.core.min.js:1
+msgid "Note:"
+msgstr ""
+
+#: assets/js/betterlinkspro.core.min.js:1
+msgid "For this feature to work, make sure that the website where you are trying to redirect has SSL configured."
+msgstr ""
+
+#: assets/js/betterlinkspro.core.min.js:1
+msgid "Role Management"
+msgstr ""
+
+#: assets/js/betterlinkspro.core.min.js:1
+msgid "Google Analytics"
+msgstr ""
+
+#: assets/js/betterlinkspro.core.min.js:1
+msgid "Broken Link Checker"
+msgstr ""
+
+#: assets/js/betterlinkspro.core.min.js:1
+msgid "License"
+msgstr ""
+
+#: assets/js/betterlinkspro.core.min.js:1
+msgid "Active"
+msgstr ""
+
+#: assets/js/betterlinkspro.core.min.js:1
+msgid "Schedule"
+msgstr ""
+
+#: assets/js/betterlinkspro.core.min.js:1
+msgid "Expired"
+msgstr ""
+
+#: assets/js/betterlinkspro.core.min.js:1
+msgid "Draft"
+msgstr ""
+
+#: assets/js/betterlinkspro.core.min.js:1
+msgid "Expire"
+msgstr ""
+
+#: assets/js/betterlinkspro.core.min.js:1
+msgid "Expire After"
+msgstr ""
+
+#: assets/js/betterlinkspro.core.min.js:1
+msgid "Date"
+msgstr ""
+
+#: assets/js/betterlinkspro.core.min.js:1
+msgid "Redirect URL"
+msgstr ""
+
+#: assets/js/betterlinkspro.core.min.js:1
+msgid "after Expiration"
+msgstr ""
+
+#: assets/js/betterlinkspro.core.min.js:1
+msgid "Status"
+msgstr ""
+
+#: assets/js/betterlinkspro.core.min.js:1
+msgid "Weighted"
+msgstr ""
+
+#: assets/js/betterlinkspro.core.min.js:1
+msgid "Random"
+msgstr ""
+
+#: assets/js/betterlinkspro.core.min.js:1
+msgid "Redirect Mode"
+msgstr ""
+
+#: assets/js/betterlinkspro.core.min.js:1
+msgid "Target URL Rotations"
+msgstr ""
+
+#: assets/js/betterlinkspro.core.min.js:1
+msgid "Add New Link"
+msgstr ""
+
+#: assets/js/betterlinkspro.core.min.js:1
+msgid "Enable Split Testing"
+msgstr ""
+
+#: assets/js/betterlinkspro.core.min.js:1
+msgid "Goal Link"
+msgstr ""
+
+#: assets/js/betterlinkspro.core.min.js:1
+msgid "To check the Conversion analytics, make sure that you have \"Tracking\" option enabled in your respective Goal Link Settings"
+msgstr ""
+
+#: assets/js/betterlinkspro.core.min.js:1
+msgid "To use Split Testing, make sure that you have created a shortened URL for your Goal Link from BetterLinks Settings. For more info, check out this "
+msgstr ""
+
+#: assets/js/betterlinkspro.core.min.js:1
+msgid "doc"
+msgstr ""
+
+#: assets/js/betterlinkspro.core.min.js:1
+msgid "Geographic Target URLs"
+msgstr ""
+
+#: assets/js/betterlinkspro.core.min.js:1
+msgid "Select Country"
+msgstr ""
+
+#: assets/js/betterlinkspro.core.min.js:1
+msgid "Any"
+msgstr ""
+
+#: assets/js/betterlinkspro.core.min.js:1
+msgid "Desktop"
+msgstr ""
+
+#: assets/js/betterlinkspro.core.min.js:1
+msgid "Mobile"
+msgstr ""
+
+#: assets/js/betterlinkspro.core.min.js:1
+msgid "Phone"
+msgstr ""
+
+#: assets/js/betterlinkspro.core.min.js:1
+msgid "Tablet"
+msgstr ""
+
+#: assets/js/betterlinkspro.core.min.js:1
+msgid "Android"
+msgstr ""
+
+#: assets/js/betterlinkspro.core.min.js:1
+msgid "IOS"
+msgstr ""
+
+#: assets/js/betterlinkspro.core.min.js:1
+msgid "Linux"
+msgstr ""
+
+#: assets/js/betterlinkspro.core.min.js:1
+msgid "Mac"
+msgstr ""
+
+#: assets/js/betterlinkspro.core.min.js:1
+msgid "Windows"
+msgstr ""
+
+#: assets/js/betterlinkspro.core.min.js:1
+msgid "Amazon Silk"
+msgstr ""
+
+#: assets/js/betterlinkspro.core.min.js:1
+msgid "Andorid"
+msgstr ""
+
+#: assets/js/betterlinkspro.core.min.js:1
+msgid "Chrome"
+msgstr ""
+
+#: assets/js/betterlinkspro.core.min.js:1
+msgid "Chromium"
+msgstr ""
+
+#: assets/js/betterlinkspro.core.min.js:1
+msgid "Firefox"
+msgstr ""
+
+#: assets/js/betterlinkspro.core.min.js:1
+msgid "Kindle"
+msgstr ""
+
+#: assets/js/betterlinkspro.core.min.js:1
+msgid "Opera"
+msgstr ""
+
+#: assets/js/betterlinkspro.core.min.js:1
+msgid "Opera Coast"
+msgstr ""
+
+#: assets/js/betterlinkspro.core.min.js:1
+msgid "Safari"
+msgstr ""
+
+#: assets/js/betterlinkspro.core.min.js:1
+msgid "Edge"
+msgstr ""
+
+#: assets/js/betterlinkspro.core.min.js:1
+msgid "Device Based Target URLs"
+msgstr ""
+
+#: assets/js/betterlinkspro.core.min.js:1
+msgid "Device"
+msgstr ""
+
+#: assets/js/betterlinkspro.core.min.js:1
+msgid "Operating System"
+msgstr ""
+
+#: assets/js/betterlinkspro.core.min.js:1
+msgid "Browser"
+msgstr ""
+
+#: assets/js/betterlinkspro.core.min.js:1
+msgid "Time Based Target URLs"
+msgstr ""
+
+#: assets/js/betterlinkspro.core.min.js:1
+msgid "Start Date"
+msgstr ""
+
+#: assets/js/betterlinkspro.core.min.js:1
+msgid "End Date"
+msgstr ""
+
+#: assets/js/betterlinkspro.core.min.js:1
+msgid "Rotation"
+msgstr ""
+
+#: assets/js/betterlinkspro.core.min.js:1
+msgid "Geography"
+msgstr ""
+
+#: assets/js/betterlinkspro.core.min.js:1
+msgid "Redirection Type:"
+msgstr ""
+
+#: assets/js/betterlinkspro.core.min.js:1
+msgid "Redirection Mode:"
+msgstr ""
+
+#: assets/js/betterlinkspro.core.min.js:1
+msgid "Target URL 1"
+msgstr ""
+
+#: assets/js/betterlinkspro.core.min.js:1
+msgid "Target URL 2"
+msgstr ""
+
+#: assets/js/betterlinkspro.core.min.js:1
+msgid "This will allow to create Rotation URLs and run A/B Split testing. To configure this"
+msgstr ""
+
+#: assets/js/betterlinkspro.core.min.js:1
+msgid "Click Here"
+msgstr ""
+
+#: assets/js/betterlinkspro.core.min.js:1
+msgid "Enable Dynamic Redirect"
+msgstr ""
+
+#: assets/js/betterlinkspro.core.min.js:1
+msgid "Redirection Type"
+msgstr ""
+
+#: assets/js/betterlinkspro.core.min.js:1
+msgid "Rotation URLs can't be blank"
+msgstr ""
+
+#: assets/js/betterlinkspro.core.min.js:1
+msgid "Your Rotation URLs must add up to 100% in total"
+msgstr ""
+
+#: assets/js/betterlinkspro.core.min.js:1
+msgid "Technology URLs can't be blank"
+msgstr ""
+
+#: assets/js/betterlinkspro.core.min.js:1
+msgid "Geographic URLs can't be blank"
+msgstr ""
+
+#: assets/js/betterlinkspro.core.min.js:1
+msgid "Geographic Country can't be blank"
+msgstr ""
+
+#: assets/js/betterlinkspro.core.min.js:1
+msgid "Time Redirect URLs can't be blank"
+msgstr ""
+
+#: assets/js/betterlinkspro.core.min.js:1
+msgid "Your Time Period Redirect start time must come before the end time."
+msgstr ""
+
+#: assets/js/betterlinkspro.core.min.js:1
+msgid "Start date or End date can't be blank"
+msgstr ""
+
+#: assets/js/betterlinkspro.core.min.js:1
+msgid "Save & Close"
+msgstr ""
+
+#: assets/js/betterlinkspro.core.min.js:1
+msgid "UTM Builder"
+msgstr ""
+
+#: assets/js/betterlinkspro.core.min.js:1
+msgid "Add Campaign Parameters to Track Custom Campaigns"
+msgstr ""
+
+#: assets/js/betterlinkspro.core.min.js:1
+msgid "Template"
+msgstr ""
+
+#: assets/js/betterlinkspro.core.min.js:1
+msgid "No Template Chosen"
+msgstr ""
+
+#: assets/js/betterlinkspro.core.min.js:1
+msgid "Campaign"
+msgstr ""
+
+#: assets/js/betterlinkspro.core.min.js:1
+msgid "e.g: Example-Campaign"
+msgstr ""
+
+#: assets/js/betterlinkspro.core.min.js:1
+msgid "Medium"
+msgstr ""
+
+#: assets/js/betterlinkspro.core.min.js:1
+msgid "e.g: cpc, banner, email"
+msgstr ""
+
+#: assets/js/betterlinkspro.core.min.js:1
+msgid "Source"
+msgstr ""
+
+#: assets/js/betterlinkspro.core.min.js:1
+msgid "e.g: Twitter, Facebook"
+msgstr ""
+
+#: assets/js/betterlinkspro.core.min.js:1
+msgid "Term"
+msgstr ""
+
+#: assets/js/betterlinkspro.core.min.js:1
+msgid "e.g: paid keywords"
+msgstr ""
+
+#: assets/js/betterlinkspro.core.min.js:1
+msgid "Content"
+msgstr ""
+
+#: assets/js/betterlinkspro.core.min.js:1
+msgid "e.g: text AD name"
+msgstr ""
+
+#: assets/js/betterlinkspro.core.min.js:1
+msgid "Save Link"
+msgstr ""
+
+#: assets/js/betterlinkspro.core.min.js:1
+msgid "Save"
+msgstr ""
+
+#: assets/js/betterlinkspro.core.min.js:1
+msgid "Save New Template"
+msgstr ""
+
+#: assets/js/betterlinkspro.core.min.js:1
+msgid "Twitter Share Link"
+msgstr ""
+
+#: assets/js/betterlinkspro.core.min.js:1
+msgid "Twitter will automatically truncate or shorten links that exceed 32 characters"
+msgstr ""
+
+#: assets/js/betterlinkspro.core.min.js:1
+msgid "Share Text"
+msgstr ""
+
+#: assets/js/betterlinkspro.core.min.js:1
+msgid "HashTags"
+msgstr ""
+
+#: assets/js/betterlinkspro.core.min.js:1
+msgid "Via"
+msgstr ""
+
+#: assets/js/betterlinkspro.core.min.js:1
+msgid "Related"
+msgstr ""
+
+#: assets/js/betterlinkspro.core.min.js:1
+msgid "Generate URL"
+msgstr ""
+
+#: assets/js/betterlinkspro.core.min.js:1
+msgid "LinkedIn Share Link"
+msgstr ""
+
+#: assets/js/betterlinkspro.core.min.js:1
+msgid "Title"
+msgstr ""
+
+#: assets/js/betterlinkspro.core.min.js:1
+msgid "Summary"
+msgstr ""
+
+#: assets/js/betterlinkspro.core.min.js:1
+msgid "Email Share Link"
+msgstr ""
+
+#: assets/js/betterlinkspro.core.min.js:1
+msgid "TO"
+msgstr ""
+
+#: assets/js/betterlinkspro.core.min.js:1
+msgid "CC"
+msgstr ""
+
+#: assets/js/betterlinkspro.core.min.js:1
+msgid "Subject"
+msgstr ""
+
+#: assets/js/betterlinkspro.core.min.js:1
+msgid "Body"
+msgstr ""
+
+#: assets/js/betterlinkspro.core.min.js:1
+msgid "Reddit Share Link"
+msgstr ""
+
+#: assets/js/betterlinkspro.core.min.js:1
+msgid "Pinterest Share Link"
+msgstr ""
+
+#: assets/js/betterlinkspro.core.min.js:1
+msgid "Media URL"
+msgstr ""
+
+#: assets/js/betterlinkspro.core.min.js:1
+msgid "Description"
+msgstr ""
+
+#: assets/js/betterlinkspro.core.min.js:1
+msgid "Social Share"
+msgstr ""
+
+#: assets/js/betterlinkspro.core.min.js:1
+msgid "Social Media"
+msgstr ""
+
+#: assets/js/betterlinkspro.core.min.js:1
+msgid "Facebook"
+msgstr ""
+
+#: assets/js/betterlinkspro.core.min.js:1
+msgid "Twitter"
+msgstr ""
+
+#: assets/js/betterlinkspro.core.min.js:1
+msgid "Linkedin"
+msgstr ""
+
+#: assets/js/betterlinkspro.core.min.js:1
+msgid "Email"
+msgstr ""
+
+#: assets/js/betterlinkspro.core.min.js:1
+msgid "Reddit"
+msgstr ""
+
+#: assets/js/betterlinkspro.core.min.js:1
+msgid "Pinterest"
+msgstr ""
+
+#: assets/js/betterlinkspro.core.min.js:1
+msgid "Social Media Share"
+msgstr ""
+
+#: assets/js/betterlinkspro.core.min.js:1
+msgid "Split Test Analytics"
+msgstr ""

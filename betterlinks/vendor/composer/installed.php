@@ -1,0 +1,52 @@
+<?php return array(
+    'root' => array(
+        'name' => 'wpdevteam/betterlinks',
+        'pretty_version' => 'dev-latest',
+        'version' => 'dev-latest',
+        'reference' => 'a9b843f4c5e476093a90f03dbbf6e3eaa05a2625',
+        'type' => 'library',
+        'install_path' => __DIR__ . '/../../',
+        'aliases' => array(),
+        'dev' => true,
+    ),
+    'versions' => array(
+        'a5hleyrich/wp-background-processing' => array(
+            'pretty_version' => '1.0.2',
+            'version' => '1.0.2.0',
+            'reference' => '2cbee1abd1b49e1133cd8f611df4d4fc5a8b9800',
+            'type' => 'library',
+            'install_path' => __DIR__ . '/../a5hleyrich/wp-background-processing',
+            'aliases' => array(),
+            'dev_requirement' => false,
+        ),
+        'jaybizzle/crawler-detect' => array(
+            'pretty_version' => 'v1.2.111',
+            'version' => '1.2.111.0',
+            'reference' => 'd572ed4a65a70a2d2871dc5137c9c5b7e69745ab',
+            'type' => 'library',
+            'install_path' => __DIR__ . '/../jaybizzle/crawler-detect',
+            'aliases' => array(),
+            'dev_requirement' => false,
+        ),
+        'priyomukul/wp-notice' => array(
+            'pretty_version' => 'dev-main',
+            'version' => 'dev-main',
+            'reference' => '832119aa1f4ddc32375ea88168fc84c2e58e9c29',
+            'type' => 'library',
+            'install_path' => __DIR__ . '/../priyomukul/wp-notice',
+            'aliases' => array(
+                0 => '9999999-dev',
+            ),
+            'dev_requirement' => false,
+        ),
+        'wpdevteam/betterlinks' => array(
+            'pretty_version' => 'dev-latest',
+            'version' => 'dev-latest',
+            'reference' => 'a9b843f4c5e476093a90f03dbbf6e3eaa05a2625',
+            'type' => 'library',
+            'install_path' => __DIR__ . '/../../',
+            'aliases' => array(),
+            'dev_requirement' => false,
+        ),
+    ),
+);
